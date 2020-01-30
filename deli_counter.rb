@@ -3,7 +3,7 @@ def line (deli)
     puts "The line is currently empty."
   else
     deli.each.with_index(1) |person, 1|
-    puts ""
+    puts "#{1}"
   end
 end
 
