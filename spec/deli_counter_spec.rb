@@ -66,7 +66,8 @@ describe 'Deli Counter' do
 
     context "there are people in line" do
       it "should serve the first person in line and remove them from the queue" do
-        expect($stdout).to receive(:puts).with("Currently serving Logan.")
+        expect($stdout).to receive(:puts).with(if deli.length == 0 
+    puts "The line is currently empty."
         now_serving(other_deli)
         expect(other_deli).to eq(%w(Avi Spencer))
       end
