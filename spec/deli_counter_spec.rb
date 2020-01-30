@@ -72,6 +72,6 @@ describe 'Deli Counter' do
         expect(other_deli).to eq(%w(Avi Spencer))
       end
     end
-  end
+  
 
-
+end
